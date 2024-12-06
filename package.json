@@ -1,0 +1,32 @@
+{
+  "name": "primeira-api-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "compile": "tsc",
+    "dev:simple": "tsnd --respawn --transpile-only simple-server.ts",
+    "dev": "tsnd --respawn --transpile-only src/server.ts",
+    "start": "npm run compile && node ./dist/index.js",
+    "lint": "eslint src --ext .ts --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
+    "eslint": "8.33.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.11.2",
+    "@types/node": "^22.10.1",
+    "apollo-server": "^3.13.0",
+    "graphql": "^16.9.0",
+    "graphql-scalars": "^1.24.0",
+    "reflect-metadata": "^0.2.2",
+    "type-graphql": "2.0.0-rc.2"
+  }
+}
